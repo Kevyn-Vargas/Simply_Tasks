@@ -1,0 +1,90 @@
+.item {
+  background-color: #ffffff;
+  width: 320px;
+  height: 60px;
+  margin: 10px 20px;
+  padding: 0 10px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.item img {
+  width: 20px;
+  padding: 0 10px;
+}
+
+.delete-icon {
+  margin: auto;
+}
+
+.text-task {
+  font-size: 1rem;
+  margin: auto;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.uncheck-icon {
+  width: 20px;
+  height: 20px;
+  background: url("../img/uncheck.png") no-repeat center center;
+  background-size: cover;
+  margin-right: 8px;
+}
+
+.uncheck-icon ~ .text-task {
+  text-decoration: none;
+  color: black;
+}
+
+.check-icon {
+  background: url("../img/check.png") no-repeat center center;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.check-icon ~ .text-task {
+  text-decoration: line-through;
+  color: gray;
+  transition: all 0.3s ease-in-out;
+}
+
+.delete-button {
+  width: 20px;
+  height: 20px;
+  background: url("../img/delete.png") no-repeat center center;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+
+.container-button-delete {
+  display: flex;
+}
+
+@media (max-width: 480px) {
+  .item {
+    height: 75px;
+    margin: 15px 20px;
+  }
+
+  .text-task{
+    font-size: 1.2rem;
+  }
+
+  .uncheck-icon{
+    margin-right: 20px;
+  }
+}

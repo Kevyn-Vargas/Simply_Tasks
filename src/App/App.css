@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap");
+
+html,
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Reddit Sans", sans-serif;
+}
+
+::selection {
+  background: #b7ffdb;
+  color: #00703c;
+}
+
+/* Para navegadores Webkit (Chrome, Safari) */
+::-webkit-selection {
+  background: #b7ffdb;
+  color: #00703c;
+}
+
+.app {
+  z-index: 1;
+  display: flex;
+  background: linear-gradient(
+    229deg,
+    rgba(255, 164, 118, 1) 0%,
+    rgba(214, 255, 235, 1) 49%,
+    rgba(110, 255, 182, 1) 100%
+  );
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 400% 400%;
+  animation: color 12s ease-in-out infinite;
+  background-attachment: fixed;
+  background-position: center;
+  width: 150%;
+  height: 100vh;
+}
+
+.box-new-task {
+  padding: 5vh 12vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.box-tasks {
+  padding: 5vh 12vh;
+}
+
+.box-task-list {
+  background-color: #ffffff80;
+  border-radius: 20px;
+  padding: 35px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 480px;
+}
+
+input::placeholder {
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: 600;
+}
+
+input {
+  font-family: "Reddit Sans", sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 480px) {
+  html {
+    height: auto;
+  }
+
+  .app {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    height: 105%;
+  }
+
+  .box-tasks {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+
+  .box-new-task {
+    margin: auto;
+    padding: 9vh 12vh;
+  }
+
+  .box-task-list {
+    padding-left: 20px;
+    max-height: 670px;
+    margin: auto;
+    width: 470px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+  .app{
+    width: 100%;
+    height: 100%;
+  }
+  .box-new-task {
+    padding: 5vh 9vh;
+  }
+
+  .box-tasks {
+    padding: 5vh 9vh;
+  }
+
+  .box-task-list {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 768px)
+{
+  body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+}

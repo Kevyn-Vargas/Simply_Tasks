@@ -1,0 +1,109 @@
+.form-edit-user {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  border-style: none;
+  width: 300px;
+  margin: 10px auto;
+}
+
+.form-modal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button-close-modal {
+  background: url("../img/close.png");
+  border: none;
+  border-radius: 5px;
+  right: -10px;
+  top: -28px;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-size: contain;
+  cursor: pointer;
+}
+.title-modal {
+  font-size: 1rem;
+  margin: auto;
+  margin-left: 20px;
+  margin-bottom: 16px;
+  color: #b45728;
+}
+
+.input-modal {
+  color: #81c784;
+  border: 2px solid #b6c0b7;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.input-modal::placeholder {
+  color: #a5d6a7;
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: 600;
+}
+
+.input-modal[type="text"] {
+  caret-color: #02aa80;
+  color: #0e7540;
+  font-weight: 600;
+  text-align: center;
+}
+
+.input-modal:focus {
+  outline: none;
+}
+
+.button-submit-modal {
+  font-family: "Pixelify Sans", sans-serif;
+  background-color: #a5d6a7;
+  font-weight: 600;
+  color: #224122;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.button-submit-modal:hover {
+  background-color: #81c784;
+}
+
+@media (max-width: 480px) {
+  .title-modal {
+    font-size: 1.5rem;
+  }
+
+  .input-modal {
+    font-size: 1.3rem;
+  }
+
+  .button-submit-modal{
+    font-size: 1.2rem;
+  }
+
+  .button-close-modal {
+    width: 40px;
+    height: 40px;
+    right: -18px;
+    top: -29px;
+  }
+}

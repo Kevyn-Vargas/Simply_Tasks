@@ -1,0 +1,15 @@
+.container-list{
+    flex-direction: column;
+    padding: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.container-list::-webkit-scrollbar{
+    width: 7px;
+}
+
+.container-list::-webkit-scrollbar-thumb{
+    background-color: #ffa962;
+    border-radius: 20px;
+}

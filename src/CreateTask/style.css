@@ -1,0 +1,124 @@
+.input-container-new-task {
+  position: relative;
+  width: 100%;
+}
+
+.input-new-task {
+  border-style: none;
+  border-radius: 20px;
+  background-color: #dadada;
+  height: 35px;
+  font-size: 0.9rem;
+  margin: 8px 0;
+  padding-left: 15px;
+  padding-right: 35px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-new-task::placeholder {
+  font-size: 0.8rem;
+}
+
+.input-new-task:focus {
+  outline: none;
+}
+
+.input-new-task[type="text"] {
+  caret-color: #02aa80;
+  color: #00703C;
+}
+
+.input-container-new-task::after {
+  content: '';
+  position: absolute;
+  right: 10px;
+  top: 25%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: url("../img/teclado.png") no-repeat center center;
+  background-size: contain;
+  pointer-events: none;
+}
+
+.button-create-task {
+  width: 110px;
+  margin: 10px 0;
+  padding: 8px 0;
+  border-style: none;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #02aa80;
+  font-family: "Reddit Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  box-shadow: 0 5px #ffa476;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.button-create-task:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px #02aa80;
+}
+
+@media (max-width: 480px) {
+  .input-new-task{
+    width: 70%;
+    height: 50px;
+  }
+
+  .input-container-new-task{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+
+  .input-container-new-task::after{
+    display: none;
+  }
+
+  .input-new-task::placeholder {
+    font-size: 1.2rem;
+  }
+
+  .input-new-task[type="text"] {
+    font-size: 1.3rem;
+  }
+
+  .button-create-task{
+    font-size: 1.2rem;
+    width: 150px;
+    margin-left: 5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .input-new-task{
+    width: 70%;
+  }
+
+  .input-container-new-task{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+
+  .input-container-new-task::after{
+    display: none;
+  }
+
+  .input-new-task::placeholder {
+    font-size: 0.8rem;
+  }
+
+  .input-new-task[type="text"] {
+    font-size: 1rem;
+  }
+
+  .button-create-task{
+    font-size: 0.8rem;
+    margin-left: 5px;
+  }
+}

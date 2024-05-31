@@ -1,0 +1,146 @@
+.new-task-contenedor {
+  width: 450px;
+  height: auto;
+  max-height: 510px;
+  background-color: #ffffff80;
+  border-radius: 20px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.new-task-contenedor img {
+  margin: auto;
+  width: 280px;
+}
+
+.title-new-task {
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.subtitle-new-task {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin: 4px 0;
+  color: #02aa80;
+}
+
+.loading-box {
+  width: 20px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  margin: 0 15px;
+}
+
+.WH {
+  width: 10px;
+  height: 30px;
+}
+.color {
+  background-color: #02aa80;
+}
+.animation {
+  animation: Loading 1s infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+@keyframes Loading {
+  0% {
+    height: 0;
+  }
+  25% {
+    height: 25px;
+  }
+  50% {
+    height: 25px;
+    transform: rotate(10deg);
+  }
+  75% {
+    height: 25px;
+    transform: rotate(0deg);
+  }
+  100% {
+    height: 0;
+  }
+}
+
+.name-text {
+  color: #02aa80;
+  animation: fadeToNormal 0.8s ease-out forwards;
+  margin: 0 10px;
+}
+
+@keyframes fadeToNormal {
+  0% {
+    color: #02aa8000;
+  }
+  100% {
+    color: #02aa80;
+  }
+}
+
+@media (max-width: 480px) {
+  .new-task-contenedor {
+    padding: 20px 70px;
+    padding-left: 20px;
+  }
+
+  .title-new-task {
+    font-size: 2.4rem;
+  }
+
+  .new-task-contenedor img {
+    display: none;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  .subtitle-new-task {
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  html {
+    height: auto;
+  }
+  .new-task-contenedor {
+    width: 340px;
+    padding: 20px;
+    padding-bottom: 65px;
+  }
+
+  .title-new-task {
+    font-size: 1.7rem;
+  }
+
+  .new-task-contenedor img {
+    width: 230px;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  .subtitle-new-task {
+    font-size: 1rem;
+    margin-left: 10px;
+  }
+
+  .name-text {
+    margin-right: 5px;
+  }
+}

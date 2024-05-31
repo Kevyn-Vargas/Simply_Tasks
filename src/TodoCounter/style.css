@@ -1,0 +1,36 @@
+.title-counter-first {
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 0;
+}
+
+.title-counter-second {
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.props-counter {
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: 600;
+}
+
+.completed {
+  color: #00703c;
+}
+
+.total {
+  color: #fd7200;
+}
+
+@media (max-width: 480px) {
+  .title-counter-first{
+    font-size: 2.4rem;
+  }
+
+  .title-counter-second{
+    font-size: 1.8rem;
+  }
+
+
+}

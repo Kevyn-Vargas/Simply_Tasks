@@ -1,0 +1,58 @@
+.container-button-user {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 110%;
+}
+
+.button-user {
+  background: url("../img/edituser.png");
+  background-size: contain;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 40px;
+  transition: background-color 0.3s ease;
+}
+
+.button-user:hover {
+  background-color: #81c784;
+  animation: pulse 0.5s; /* Aplicar animación "pulse" al pasar el mouse */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 480px) {
+  .button-user {
+    left: -25px;
+    bottom: auto;
+    top: 20px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .button-user {
+    bottom: 0;
+    right: 10px;
+    position: relative;
+    margin: 20px;
+    width: 40px;
+    height: 40px;
+  }
+}
