@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Simply_Tasks/static/css/main.c663d552.css",
+    "main.js": "/Simply_Tasks/static/js/main.3961c567.js",
+    "static/js/453.ed3810f9.chunk.js": "/Simply_Tasks/static/js/453.ed3810f9.chunk.js",
+    "static/media/young-men-working.png": "/Simply_Tasks/static/media/young-men-working.07b1819bcff4df8012b4.png",
+    "static/media/girl.png": "/Simply_Tasks/static/media/girl.2f49dfff9b59d536289b.png",
+    "index.html": "/Simply_Tasks/index.html",
+    "main.c663d552.css.map": "/Simply_Tasks/static/css/main.c663d552.css.map",
+    "main.3961c567.js.map": "/Simply_Tasks/static/js/main.3961c567.js.map",
+    "453.ed3810f9.chunk.js.map": "/Simply_Tasks/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c663d552.css",
+    "static/js/main.3961c567.js"
+  ]
+}
