@@ -87,39 +87,41 @@ input {
 }
 
 @media (max-width: 480px) {
-  html {
+  html,
+  body {
     height: auto;
+    max-width: 480px;
+    overflow-x: hidden;
   }
 
   .app {
     display: flex;
     flex-direction: column;
-    height: auto;
     width: 100%;
+    max-width: 480px;
     height: 105%;
   }
 
   .box-tasks {
-    padding-top: 0;
     padding-bottom: 60px;
+    margin: auto;
+    padding: 0;
   }
 
   .box-new-task {
     margin: auto;
-    padding: 9vh 12vh;
+    padding: 0;
   }
 
   .box-task-list {
-    padding-left: 20px;
+    width: 60%;
     max-height: 670px;
     margin: auto;
-    width: 470px;
   }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
-
-  .app{
+  .app {
     width: 100%;
     height: 100%;
   }
@@ -136,9 +138,8 @@ input {
   }
 }
 
-@media (min-width: 768px)
-{
-  body{
+@media (min-width: 768px) {
+  body {
     overflow-y: hidden;
     overflow-x: hidden;
   }

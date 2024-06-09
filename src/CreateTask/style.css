@@ -26,11 +26,11 @@
 
 .input-new-task[type="text"] {
   caret-color: #02aa80;
-  color: #00703C;
+  color: #00703c;
 }
 
 .input-container-new-task::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 10px;
   top: 25%;
@@ -64,48 +64,50 @@
 }
 
 @media (max-width: 480px) {
-  .input-new-task{
-    width: 70%;
-    height: 50px;
+  .input-new-task {
+    width: auto;
+    height: 30px;
+    margin: 5px 0;
+    margin-left: -10px;
   }
 
-  .input-container-new-task{
+  .input-container-new-task {
     display: flex;
     flex-direction: column;
     margin-left: 5px;
   }
 
-  .input-container-new-task::after{
+  .input-container-new-task::after {
     display: none;
   }
 
   .input-new-task::placeholder {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
 
   .input-new-task[type="text"] {
-    font-size: 1.3rem;
+    font-size: 0.8rem;
   }
 
-  .button-create-task{
-    font-size: 1.2rem;
-    width: 150px;
-    margin-left: 5px;
+  .button-create-task {
+    font-size: 0.8rem;
+    max-width: 165px;
+    width: auto;
   }
 }
 
 @media (min-width: 768px) {
-  .input-new-task{
+  .input-new-task {
     width: 70%;
   }
 
-  .input-container-new-task{
+  .input-container-new-task {
     display: flex;
     flex-direction: column;
     margin-left: 5px;
   }
 
-  .input-container-new-task::after{
+  .input-container-new-task::after {
     display: none;
   }
 
@@ -117,7 +119,7 @@
     font-size: 1rem;
   }
 
-  .button-create-task{
+  .button-create-task {
     font-size: 0.8rem;
     margin-left: 5px;
   }

@@ -29,6 +29,12 @@
   color: #02aa80;
 }
 
+.loading-text {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 1.2rem;
+  color: #02aa80;
+}
+
 .loading-box {
   width: 20px;
   height: 30px;
@@ -87,28 +93,33 @@
 
 @media (max-width: 480px) {
   .new-task-contenedor {
-    padding: 20px 70px;
-    padding-left: 20px;
-  }
-
-  .title-new-task {
-    font-size: 2.4rem;
+    padding: 5px 20px;
+    width: 60%;
+    margin: auto;
   }
 
   .new-task-contenedor img {
     display: none;
   }
 
+  .title-new-task {
+    font-size: 1.2rem;
+    display: block;
+  }
+
   h3 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 10px;
-    margin-left: 10px;
   }
 
   .subtitle-new-task {
-    font-size: 1.2rem;
-    margin-left: 10px;
+    font-size: 0.8rem;
   }
+
+  .loading-box{
+    display: none;
+  }
+
 }
 
 @media (min-width: 481px) and (max-width: 768px) {

@@ -37,12 +37,11 @@
 
 @media (max-width: 480px) {
   .button-user {
-    left: -25px;
-    bottom: auto;
-    top: 20px;
+    left: -12%;
+    bottom: 5px;
     position: relative;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
 }
 

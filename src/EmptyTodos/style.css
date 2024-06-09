@@ -1,19 +1,36 @@
-.img {
-    width: 250px;
-    opacity: 0;
-    animation: fadeIn 2s ease-in-out forwards;
+.img-girl {
+  width: 250px;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
 }
 
 @keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 .title-empty {
-    font-size: 0.9rem;
-    text-align: center;
-    color: #000000;
-    opacity: 0;
-    animation: fadeIn 2s ease-in-out forwards;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #000000;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@media (max-width: 480px) {
+  .div-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title-empty {
+    font-size: 0.7rem;
+    width: 100%;
+  }
+
+  .img-girl {
+    width: 70%;
+  }
 }

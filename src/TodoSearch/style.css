@@ -37,18 +37,26 @@
 }
 
 @media (max-width: 480px) {
+  .input-container{
+    width: auto;
+  }
+
   .input-search {
-    height: 50px;
-    font-size: 1.3rem;
-    background-color: #DADADA
+    width: auto;
+    max-width: 165px;
+    height: 30px;
+    font-size: 0.8rem;
+    background-color: #dadada;
+    text-align: center;
+    margin: auto;
   }
 
   .input-search::placeholder {
-    font-size: 1.2rem;
+    font-size: 0.7rem;
+    text-align: center;
   }
 
   .search-icon {
-    width: 30px;
-    height: 30px;
+    display: none;
   }
 }
