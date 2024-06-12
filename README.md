@@ -20,7 +20,7 @@ _Puedes visitar el proyecto en: :tw-1f449: [Simply_Tasks! ](https://kevyn-vargas
 
 También puedes mirar la lista de todos sus proyectos en su perfil.
 
-## Comparte-it! :tw-1f4e1:
+## Comparte-it! 📡
 
 * Comenta a otros sobre este proyecto 📢
 * Invita un café ☕ al desarrollador.
