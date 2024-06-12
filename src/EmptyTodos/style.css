@@ -34,3 +34,15 @@
     width: 70%;
   }
 }
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .div-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-girl {
+    width: 90%;
+  }
+}

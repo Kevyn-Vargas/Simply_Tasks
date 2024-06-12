@@ -22,6 +22,6 @@
 
     .modal-content{
       width: 55%;
-      height: 40%;
+      height: auto;
     }
   }

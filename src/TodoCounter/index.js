@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./style.css";
 import { TodoContext } from "../TodoContext/index.js";
 
 function TodoCounter() {
   const { completedTodos, totalTodos } = React.useContext(TodoContext);
-  const [loading, setLoading] = useState(true);
-  const [showCongratulations, setShowCongratulations] = useState(false);
+  const [loading, setLoading] = React.useState(true);
+  const [showCongratulations, setShowCongratulations] = React.useState(false);
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (totalTodos !== undefined) {
       setLoading(false);
       setShowCongratulations(completedTodos === totalTodos && totalTodos > 0);
@@ -25,7 +25,7 @@ function TodoCounter() {
           <h1 className="title-counter-first">Your Tasks</h1>
           <h2 className="title-counter-second">
             {showCongratulations ? (
-              "Congratulations, you have finished all your tasks"
+              <span className="all-tasks-completed">Congratulations, you have finished all your tasks</span>
             ) : (
               <>
                 Completed{" "}

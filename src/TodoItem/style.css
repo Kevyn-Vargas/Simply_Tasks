@@ -76,15 +76,34 @@
 
 @media (max-width: 480px) {
   .item {
-    height: 75px;
+    width: 55vw;
+    height: 8vh;
     margin: 15px 20px;
   }
 
-  .text-task{
-    font-size: 1.2rem;
+  .text-task {
+    font-size: 0.9rem;
   }
 
-  .uncheck-icon{
+  .uncheck-icon {
     margin-right: 20px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .check-icon{
+    width: 15px;
+    height: 15px;
+  }
+
+  .delete-button{
+    width: 17px;
+    height: 17px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+  .item{
+    width: 30vw;
   }
 }

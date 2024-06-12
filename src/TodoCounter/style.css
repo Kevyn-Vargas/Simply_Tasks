@@ -23,14 +23,36 @@
   color: #fd7200;
 }
 
+.all-tasks-completed {
+  animation: fade 3s forwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media (max-width: 480px) {
-  .title-counter-first{
+  .title-counter-first {
     font-size: 1.3rem;
   }
 
-  .title-counter-second{
+  .title-counter-second {
     font-size: 1rem;
   }
+}
 
 
+@media (min-width: 481px) and (max-width: 768px){
+  .title-counter-first{
+    font-size: 1.5rem;
+  }
+
+  .title-counter-second{
+    font-size: 1.2rem;
+  }
 }

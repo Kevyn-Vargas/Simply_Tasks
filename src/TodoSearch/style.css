@@ -60,3 +60,17 @@
     display: none;
   }
 }
+
+@media (min-width: 481px) and (max-width: 768px){
+  .input-container{
+    display: flex;
+  }
+
+  .search-icon {
+    display: none;
+  }
+
+  .input-search{
+    width: max-content;
+  }
+}

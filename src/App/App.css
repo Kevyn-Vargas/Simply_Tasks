@@ -52,24 +52,24 @@ body {
   background-attachment: fixed;
   background-position: center;
   width: 150%;
-  height: 100vh;
+  height: 150%;
 }
 
 .box-new-task {
-  padding: 5vh 12vh;
+  padding: 3vw 12vh;
   display: flex;
   flex-direction: column;
 }
 
 .box-tasks {
-  padding: 5vh 12vh;
+  padding: 3vw 4vh;
 }
 
 .box-task-list {
   background-color: #ffffff80;
   border-radius: 20px;
   padding: 35px;
-  width: 450px;
+  width: 35vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,17 +99,18 @@ input {
     flex-direction: column;
     width: 100%;
     max-width: 480px;
-    height: 105%;
+    height: auto;
   }
 
   .box-tasks {
+    width: 100vw;
     padding-bottom: 60px;
     margin: auto;
     padding: 0;
   }
 
   .box-new-task {
-    margin: auto;
+    margin: 10% auto;
     padding: 0;
   }
 
@@ -121,16 +122,22 @@ input {
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   .app {
     width: 100%;
     height: 100%;
   }
   .box-new-task {
-    padding: 5vh 9vh;
+    padding: 5vw;
   }
 
   .box-tasks {
-    padding: 5vh 9vh;
+    padding: 5vw;
+    padding-left: 0;
   }
 
   .box-task-list {

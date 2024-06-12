@@ -1,5 +1,5 @@
 .new-task-contenedor {
-  width: 450px;
+  width: 35vw;
   height: auto;
   max-height: 510px;
   background-color: #ffffff80;
@@ -18,8 +18,6 @@
   font-size: 1.5rem;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: row;
 }
 
 .subtitle-new-task {
@@ -127,13 +125,14 @@
     height: auto;
   }
   .new-task-contenedor {
-    width: 340px;
+    width: 40vw;
     padding: 20px;
     padding-bottom: 65px;
   }
 
   .title-new-task {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
+    display: flow;
   }
 
   .new-task-contenedor img {
@@ -141,13 +140,13 @@
   }
 
   h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 10px;
     margin-left: 10px;
   }
 
   .subtitle-new-task {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-left: 10px;
   }
 
